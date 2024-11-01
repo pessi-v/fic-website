@@ -76,3 +76,18 @@
 		</p>
 	</div>
 </div>
+
+<style lang="scss">
+	:root {
+		--color-primary: #fff8e6;
+	}
+
+	h1,
+	h2 {
+		color: aqua;
+	}
+
+	.heroSection {
+		background-color: var(--color-primary);
+	}
+</style>
