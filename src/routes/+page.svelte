@@ -23,9 +23,9 @@
 		</div>
 	</div>
 	<div class="navBar">
-		<a href="#coming" class="navLink">WHAT WE DO</a>
-		<a href="#coming" class="navLink">FUNDING GOALS</a>
-		<a href="#coming" class="navLink">CORE IDEAS</a>
+		<a href="#section1" class="navLink">WHAT WE DO</a>
+		<a href="#sectionForm" class="navLink">FUNDING GOALS</a>
+		<a href="#sectionCards" class="navLink">CORE IDEAS</a>
 	</div>
 	<div class="heroCard">
 		<div class="flex-column-row-gap">
@@ -38,30 +38,64 @@
 		</div>
 	</div>
 </div>
-<div class="section1">
-	<h4 class="label">LABEL</h4>
-	<h2>We collect money and pass that money on to provide beginning capital</h2>
-	<p>
-		By crowdfunding, we raise money to buy property and keep it out of the market. Join our mission
-		and donate a small amount each month to the Friends' shared fund, creating a better, more secure
-		future for all.
-	</p>
-	<div class="section1SubFrame">
-		<img src="" alt="" />
-		<h4 class="label">LABEL</h4>
+<div class="section1" id="section1">
+	<div class="flex-column-row-gap">
+		<h4 class="label">WHAT WE DO</h4>
+		<h2>We collect money and pass that money on to<br />provide beginning capital</h2>
 		<p>
-			Body text or body copy is the text forming the main content of a book, magazine, web page, or
-			any other printed or digital work. This is as a contrast to both additional components such as
-			headings, images, charts, footnotes etc. on each page, and also the pages of front matter that
-			form the introduction to a book. 0123456789 € @
+			By crowdfunding, we raise money to buy property and keep it out of the market. Join our
+			mission and donate a small amount each month to the Friends' shared fund, creating a better,
+			more secure future for all.
 		</p>
+		<div class="section1SubFrame">
+			<img src="" alt="" />
+			<div class="flex-column-row-gap">
+				<h4 class="label">LABEL</h4>
+				<p>
+					Body text or body copy is the text forming the main content of a book, magazine, web page,
+					or any other printed or digital work. This is as a contrast to both additional components
+					such as headings, images, charts, footnotes etc. on each page, and also the pages of front
+					matter that form the introduction to a book. 0123456789 € @
+				</p>
+			</div>
+		</div>
 	</div>
 </div>
-<div class="sectionCards">
-	<h4 class="label">LABEL</h4>
-	<div class="cardMosaic">cards go here</div>
+<div class="sectionCards" id="sectionCards">
+	<div class="flex-column-row-gap">
+		<h4 class="label">CORE IDEAS</h4>
+		<div class="cardMosaic">
+			<div class="cardOne mosaicCard">
+				<h2>A legal contract to keep property off the market.</h2>
+			</div>
+			<div class="cardTwo mosaicCard"><h2>Housing Should Be Free!</h2></div>
+			<div class="cardThree mosaicCard">
+				<h2>Less housing stress leaves more time for struggle.</h2>
+			</div>
+			<div class="cardFour mosaicCard">
+				<h2>Housing cooperatives are social hubs for a broader community.</h2>
+			</div>
+			<div class="cardFive mosaicCard">
+				<h2>With climate change, societal change is inevitable.</h2>
+			</div>
+			<div class="cardSix mosaicCard">
+				<h2>
+					Permanence of residence is vital for a healthy connection with the Earth and vibrant
+					cities
+				</h2>
+			</div>
+			<div class="cardSeven mosaicCard">
+				<h2>Living with community is good for you.</h2>
+			</div>
+			<div class="cardEight mosaicCard">
+				<h2>The Internet can be used to build social economic networks.</h2>
+			</div>
+			<div class="cardNine mosaicCard"><h2>A hopeful narrative.</h2></div>
+			<div class="cardTen mosaicCard"><h2>Building a culture of the future.</h2></div>
+		</div>
+	</div>
 </div>
-<div class="sectionForm">
+<div class="sectionForm" id="sectionForm">
 	<h4 class="label">JOIN US</h4>
 	<h2>Big donations help a lot, small ones do too. 5e/m, hop!</h2>
 	<p>
@@ -206,6 +240,7 @@
 	.heroSection {
 		// height: auto;
 		background-color: var(--background-color-secondary);
+		min-height: auto;
 
 		@include media(tabletAndUp) {
 			height: 100vh;
@@ -292,11 +327,14 @@
 		@extend .x-padding;
 		@extend .y-padding;
 		background-color: var(--background-color-secondary);
+		min-height: auto;
 
 		@include media(tabletAndUp) {
 			// The CSS for screens bigger than tablets
-			height: 100vh;
 			width: 100vw;
+			p {
+				font-size: 1.5rem;
+			}
 		}
 	}
 
@@ -304,11 +342,121 @@
 		@extend .x-padding;
 		@extend .y-padding;
 		background-color: var(--background-color-primary);
+		min-height: auto;
+		width: 100vw;
 
 		@include media(tabletAndUp) {
 			// The CSS for screens bigger than tablets
-			height: 100vh;
-			width: 100vw;
+		}
+
+		.cardMosaic {
+			background-color: var(--background-color-primary);
+			width: 80vw;
+			aspect-ratio: 1 / 1;
+			// padding-top: 100%;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			column-gap: 30px;
+			row-gap: 30px;
+			grid-template-areas:
+				'cardOne cardTwo cardThree'
+				'cardFour cardFive cardFive'
+				'cardSix cardSix cardSeven'
+				'cardEight cardNine cardTen';
+
+			.mosaicCard {
+				// @extend .x-padding;
+				// @extend .y-padding;
+				padding-left: var(--space-l);
+				padding-right: var(--space-l);
+				padding-top: var(--space-l);
+				padding-bottom: var(--space-l);
+
+				container-type: size;
+				resize: both;
+			}
+
+			.cardOne {
+				background-color: var(--background-color-secondary);
+				grid-area: cardOne;
+
+				h2 {
+					font-size: 17cqmin;
+				}
+			}
+			.cardTwo {
+				background-color: var(--background-color-secondary);
+				grid-area: cardTwo;
+
+				h2 {
+					font-size: 22cqmin;
+				}
+			}
+			.cardThree {
+				background-color: var(--background-color-secondary);
+				grid-area: cardThree;
+
+				h2 {
+					font-size: 17cqmin;
+				}
+			}
+			.cardFour {
+				background-color: var(--background-color-secondary);
+				grid-area: cardFour;
+
+				h2 {
+					font-size: 15cqmin;
+				}
+			}
+			.cardFive {
+				background-color: var(--background-color-secondary);
+				grid-area: cardFive;
+
+				h2 {
+					font-size: 20cqmin;
+				}
+			}
+			.cardSix {
+				background-color: var(--background-color-secondary);
+				grid-area: cardSix;
+
+				h2 {
+					font-size: 18cqmin;
+				}
+			}
+			.cardSeven {
+				background-color: var(--background-color-secondary);
+				grid-area: cardSeven;
+
+				h2 {
+					font-size: 19cqmin;
+				}
+			}
+			.cardEight {
+				background-color: var(--background-color-secondary);
+				grid-area: cardEight;
+
+				h2 {
+					font-size: 15cqmin;
+				}
+			}
+			.cardNine {
+				background-color: var(--background-color-secondary);
+				grid-area: cardNine;
+
+				h2 {
+					font-size: 20cqmin;
+				}
+			}
+			.cardTen {
+				background-color: var(--background-color-secondary);
+				grid-area: cardTen;
+
+				h2 {
+					font-size: 17cqmin;
+				}
+			}
 		}
 	}
 
@@ -316,6 +464,7 @@
 		@extend .x-padding;
 		@extend .y-padding;
 		background-color: var(--background-color-secondary);
+		min-height: auto;
 
 		@include media(tabletAndUp) {
 			// The CSS for screens bigger than tablets
@@ -328,6 +477,7 @@
 		@extend .x-padding;
 		@extend .y-padding;
 		background-color: var(--background-color-primary);
+		min-height: auto;
 
 		@include media(tabletAndUp) {
 			// The CSS for screens bigger than tablets
