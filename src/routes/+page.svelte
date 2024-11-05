@@ -488,51 +488,125 @@
 		min-height: auto;
 		width: 100vw;
 
-		@include media(tabletAndUp) {
-			// The CSS for screens bigger than tablets
-		}
-
 		.cardMosaic {
 			background-color: var(--background-color-primary);
-			width: 80vw;
-			aspect-ratio: 1 / 1;
+			width: 90vw;
 			margin-left: auto;
 			margin-right: auto;
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr 1fr;
-			column-gap: 30px;
-			row-gap: 30px;
+			row-gap: 1rem;
+			grid-template-rows: auto;
 			grid-template-areas:
-				'cardOne cardTwo cardThree'
-				'cardFour cardFive cardFive'
-				'cardSix cardSix cardSeven'
-				'cardEight cardNine cardTen';
+				'cardOne'
+				'cardTwo'
+				'cardThree'
+				'cardFour'
+				'cardFive'
+				'cardSix'
+				'cardSeven'
+				'cardEight'
+				'cardNine'
+				'cardTen';
 
-			.mosaicCard {
-				// @extend .x-padding;
-				// @extend .y-padding;
-				padding-left: var(--space-l);
-				padding-right: var(--space-l);
-				padding-top: var(--space-l);
-				padding-bottom: var(--space-l);
+			p {
+				display: none;
+			}
 
-				container-type: size;
-				resize: both;
+			.cardOne {
+				background-color: var(--background-color-secondary);
+				grid-area: cardOne;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardTwo {
+				background-color: var(--background-color-secondary);
+				grid-area: cardTwo;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardThree {
+				background-color: var(--background-color-secondary);
+				grid-area: cardThree;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardFour {
+				background-color: var(--background-color-secondary);
+				grid-area: cardFour;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardFive {
+				background-color: var(--background-color-secondary);
+				grid-area: cardFive;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardSix {
+				background-color: var(--background-color-secondary);
+				grid-area: cardSix;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardSeven {
+				background-color: var(--background-color-secondary);
+				grid-area: cardSeven;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardEight {
+				background-color: var(--background-color-secondary);
+				grid-area: cardEight;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardNine {
+				background-color: var(--background-color-secondary);
+				grid-area: cardNine;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+			.cardTen {
+				background-color: var(--background-color-secondary);
+				grid-area: cardTen;
+				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+			}
+		}
 
-				p {
-					display: none;
-				}
+		@include media(tabletAndUp) {
+			// The CSS for screens bigger than tablets
 
-				&:hover {
-					h2 {
+			.cardMosaic {
+				width: 80vw;
+				aspect-ratio: 1 / 1;
+				margin-left: auto;
+				margin-right: auto;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr;
+				column-gap: 30px;
+				row-gap: 30px;
+				grid-template-areas:
+					'cardOne cardTwo cardThree'
+					'cardFour cardFive cardFive'
+					'cardSix cardSix cardSeven'
+					'cardEight cardNine cardTen';
+
+				.mosaicCard {
+					// @extend .x-padding;
+					// @extend .y-padding;
+					padding-left: var(--space-l);
+					padding-right: var(--space-l);
+					padding-top: var(--space-l);
+					padding-bottom: var(--space-l);
+
+					container-type: size;
+					resize: both;
+
+					p {
 						display: none;
 					}
 
-					p {
-						display: block;
-						color: var(--fic-gray);
-						font-size: 6.8cqmin;
+					&:hover {
+						h2 {
+							display: none;
+						}
+
+						p {
+							display: block;
+							color: var(--fic-gray);
+							font-size: 6.8cqmin;
+						}
 					}
 				}
 			}
