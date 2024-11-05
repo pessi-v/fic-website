@@ -50,7 +50,7 @@
 		<div class="section1SubFrame">
 			<img src="./image1.png" alt="" />
 			<div class="flex-column-row-gap">
-				<h4 class="label">LABEL</h4>
+				<h4 class="label">WHY WE ARE DOING IT</h4>
 				<p>
 					We aim to create autonomous housing groups to show how collective living can work. We
 					believe housing should be rent-free and controlled by residents, with no need to pay
@@ -171,36 +171,35 @@
 </div>
 <div class="sectionForm" id="sectionForm">
 	<h4 class="label">JOIN US</h4>
-	<h2>
+	<h2 class="title">
 		We want to increase the number of community-owned housing across the EU, while keeping homes out
 		of the market
 	</h2>
-	<p>
+	<p class="content">
 		We aim to partially or fully fund 1000 new community-owned housing projects in the EU countries
 		within 5 to 10 years. Recipient projects of our support must agree on a contract* designed to
 		keep property away from the market.
-	</p>
-	<br />
-	<p>
+
+		<br />
+
 		We rank applicant projects based on how well they would benefit their neighbourhood communities,
 		contribute to ecological land stewardship and food security and how active their members are
 		within social and ecological movements.
 	</p>
-	<div class="sectionFormSubFrame">
-		<div class="donationForm">
-			<h4>MAKE A DONATION</h4>
-			<label for="name">First and Last Name</label>
-			<input type="text" placeholder="First and Last Name" />
-			<label for="email">Email Address</label>
-			<input type="text" placeholder="Email Address" />
-			<h4>I want to make a monthly donation of</h4>
-			<div class="formButtons">
-				<button class="one">1€</button>
-				<button class="five">5€</button>
-				<button class="ten">10€</button>
-				<button class="custom">custom amount</button>
-				<button class="submit">DONATE</button>
-			</div>
+	<div class="sectionFormSubFrame"></div>
+	<div class="donationForm">
+		<h4>MAKE A DONATION</h4>
+		<label for="name">First and Last Name</label>
+		<input type="text" placeholder="First and Last Name" />
+		<label for="email">Email Address</label>
+		<input type="text" placeholder="Email Address" />
+		<h4>I want to make a monthly donation of</h4>
+		<div class="formButtons">
+			<button class="one">1€</button>
+			<button class="five">5€</button>
+			<button class="ten">10€</button>
+			<input type="text" placeholder="custom amount" class="custom" />
+			<button class="submit">DONATE</button>
 		</div>
 	</div>
 </div>
@@ -291,7 +290,7 @@
 	}
 
 	h2 {
-		font-size: 3rem;
+		font-size: 2rem;
 
 		@include media(tabletAndUp) {
 			font-size: 5rem;
@@ -345,6 +344,9 @@
 	}
 
 	.y-padding {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+
 		@include media(tabletAndUp) {
 			padding-top: var(--space-xxxxl);
 			padding-bottom: var(--space-xl);
@@ -441,9 +443,9 @@
 			background-color: var(--background-color-secondary);
 			grid-area: heroCard;
 
-			// h2 {
-			// 	font-size: rem;
-			// }
+			h2 {
+				font-size: 3rem;
+			}
 
 			@include media(tabletAndUp) {
 				// The CSS for screens bigger than tablets
@@ -622,42 +624,74 @@
 		@extend .x-padding;
 		@extend .y-padding;
 		background-color: var(--background-color-secondary);
-		min-height: auto;
+		display: grid;
+		width: 100vw;
+		height: auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+			'label'
+			'title'
+			'content'
+			'donationForm';
 
 		@include media(tabletAndUp) {
 			// The CSS for screens bigger than tablets
-			height: 100vh;
-			width: 100vw;
+			grid-template-columns: 1fr 25vw;
+			grid-template-rows: auto;
+			grid-template-areas:
+				'label .'
+				'title .'
+				'content donationForm'
+				'sectionFormSubFrame donationForm';
+
+			.sectionFormSubFrame {
+				grid-area: sectionFormSubFrame;
+				width: 100%;
+				height: 400px;
+			}
 		}
 
-		label {
-			font-family: 'Readex Pro';
-			color: var(--fic-gray);
+		.title {
+			grid-area: title;
 		}
 
-		input {
-			font-family: 'Readex Pro';
-			font-style: italic;
-			border-radius: 100px;
-			min-height: 6vh;
-			min-width: 13vw;
-			border: 1px solid var(--fic-gray);
-			background-color: var(--background-color-primary);
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			padding: 2rem;
-			font-size: 1rem;
+		.label {
+			grid-area: label;
 		}
 
-		.sectionFormSubFrame {
-			display: flex;
-			justify-content: flex-end;
+		.content {
+			grid-area: content;
 		}
 
 		.donationForm {
 			@extend .flex-column-row-gap;
-			width: 25vw;
+			grid-area: donationForm;
+			width: 100%;
+
+			@include media(tabletAndUp) {
+				width: 25vw;
+			}
+
+			label {
+				font-family: 'Readex Pro';
+				color: var(--fic-gray);
+			}
+
+			input {
+				font-family: 'Readex Pro';
+				font-style: italic;
+				border-radius: 100px;
+				min-height: 6vh;
+				min-width: 13vw;
+				width: 100%;
+				border: 1px solid var(--fic-gray);
+				background-color: var(--background-color-primary);
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				padding: 2rem;
+				font-size: 1rem;
+			}
 
 			.formButtons {
 				display: grid;
