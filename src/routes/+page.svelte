@@ -19,7 +19,7 @@
 				We support initiatives that are willing to commit to Ownership Common, a legal agreement
 				between the legal entity of a project, and an external party
 			</p>
-			<button class="btn btn-secondary buttonSecondary">APPLY</button>
+			<a class="btn btn-secondary buttonSecondary" href="#section2">APPLY</a>
 		</div>
 	</div>
 	<div class="navBar">
@@ -52,10 +52,18 @@
 			<div class="flex-column-row-gap">
 				<h4 class="label">LABEL</h4>
 				<p>
-					Body text or body copy is the text forming the main content of a book, magazine, web page,
-					or any other printed or digital work. This is as a contrast to both additional components
-					such as headings, images, charts, footnotes etc. on each page, and also the pages of front
-					matter that form the introduction to a book. 0123456789 € @
+					We aim to create autonomous housing groups to show how collective living can work. We
+					believe housing should be rent-free and controlled by residents, with no need to pay
+					landlords. Everyone deserves a secure home as a basic human right. Housing security is key
+					to freedom. It allows us to focus more on helping our communities, caring for the
+					environment, and building a more social society.
+				</p>
+				<p style="font-size: 1.5rem;">
+					We only support initiatives, that are willing to commit to Ownership in Common, a legal
+					agreement between the property-owning legal entity of a project, and an external party:
+					either Friends in Common, or a third-party aligned with our mission.This agreement gives
+					enough legal power to the external party to block the resale of the property, making it
+					impossible for a Friends in Common supported property to return to the market.
 				</p>
 			</div>
 		</div>
@@ -163,12 +171,20 @@
 </div>
 <div class="sectionForm" id="sectionForm">
 	<h4 class="label">JOIN US</h4>
-	<h2>Big donations help a lot,<br />small ones do too. 5e/m, hop!</h2>
+	<h2>
+		We want to increase the number of community-owned housing across the EU, while keeping homes out
+		of the market
+	</h2>
 	<p>
-		Body text or body copy is the text forming the main content of a book, magazine, web page, or
-		any other printed or digital work. This is as a contrast to both additional components such as
-		headings, images, charts, footnotes etc. on each page, and also the pages of front matter that
-		form the introduction to a book.
+		We aim to partially or fully fund 1000 new community-owned housing projects in the EU countries
+		within 5 to 10 years. Recipient projects of our support must agree on a contract* designed to
+		keep property away from the market.
+	</p>
+	<br />
+	<p>
+		We rank applicant projects based on how well they would benefit their neighbourhood communities,
+		contribute to ecological land stewardship and food security and how active their members are
+		within social and ecological movements.
 	</p>
 	<div class="sectionFormSubFrame">
 		<div class="donationForm">
@@ -188,7 +204,7 @@
 		</div>
 	</div>
 </div>
-<div class="section2">
+<div class="section2" id="section2">
 	<h4 class="label">LABEL</h4>
 	<h2>Main Title of a Reasonable Standard Length</h2>
 	<p>
@@ -275,7 +291,11 @@
 	}
 
 	h2 {
-		font-size: 4.4rem;
+		font-size: 3rem;
+
+		@include media(tabletAndUp) {
+			font-size: 5rem;
+		}
 	}
 
 	a,
@@ -315,15 +335,18 @@
 	}
 
 	.x-padding {
+		padding-left: 1rem;
+		padding-right: 1rem;
+
 		@include media(tabletAndUp) {
-			padding-left: var(--space-xxxxl);
-			padding-right: var(--space-xxxxl);
+			padding-left: 5rem;
+			padding-right: 5rem;
 		}
 	}
 
 	.y-padding {
 		@include media(tabletAndUp) {
-			padding-top: var(--space-xl);
+			padding-top: var(--space-xxxxl);
 			padding-bottom: var(--space-xl);
 		}
 	}
@@ -341,6 +364,15 @@
 		// height: auto;
 		background-color: var(--background-color-secondary);
 		// min-height: auto;
+		width: 100vw;
+		display: grid;
+		// grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			'logo'
+			'heroCard'
+			'cardButtonMain'
+			'cardButtonSecondary';
 
 		@include media(tabletAndUp) {
 			height: auto;
@@ -351,72 +383,78 @@
 				'logo navBar'
 				'cardButtonMain heroCard'
 				'cardButtonSecondary heroCard';
+		}
 
-			h2 {
-				font-size: 6.125rem;
+		.logo {
+			@extend .x-padding;
+			background-color: var(--background-color-primary);
+			height: auto;
+			grid-area: logo;
+
+			@include media(tabletAndUp) {
+				// The CSS for screens bigger than tablets
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
 			}
 		}
-	}
 
-	.logo {
-		@extend .x-padding;
-		background-color: var(--background-color-primary);
-
-		@include media(tabletAndUp) {
-			// The CSS for screens bigger than tablets
-			grid-area: logo;
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-		}
-	}
-
-	.cardButtonMain {
-		@extend .x-padding;
-		@extend .y-padding;
-		background-color: var(--background-color-primary);
-
-		@include media(tabletAndUp) {
-			// The CSS for screens bigger than
+		.cardButtonMain {
+			@extend .x-padding;
+			@extend .y-padding;
+			background-color: var(--background-color-primary);
 			grid-area: cardButtonMain;
+
+			@include media(tabletAndUp) {
+				// The CSS for screens bigger than
+			}
 		}
-	}
 
-	.cardButtonSecondary {
-		@extend .x-padding;
-		@extend .y-padding;
-		background-color: var(--background-color-primary);
-
-		@include media(tabletAndUp) {
-			// The CSS for screens bigger than tablets
+		.cardButtonSecondary {
+			@extend .x-padding;
+			@extend .y-padding;
+			background-color: var(--background-color-primary);
 			grid-area: cardButtonSecondary;
+
+			@include media(tabletAndUp) {
+				// The CSS for screens bigger than tablets
+			}
 		}
-	}
 
-	.navBar {
-		@extend .x-padding;
-		background-color: var(--background-color-secondary);
+		.navBar {
+			@extend .x-padding;
+			display: none;
 
-		@include media(tabletAndUp) {
-			// The CSS for screens bigger than tablets
-			grid-area: navBar;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+			@include media(tabletAndUp) {
+				// The CSS for screens bigger than tablets
+				display: flex;
+				grid-area: navBar;
+				justify-content: space-between;
+				align-items: center;
+				background-color: var(--background-color-secondary);
+			}
 		}
-	}
 
-	.heroCard {
-		@extend .x-padding;
-		@extend .y-padding;
-		background-color: var(--background-color-secondary);
-
-		@include media(tabletAndUp) {
-			// The CSS for screens bigger than tablets
-			// height: 100%;
-			// width: 70%;
+		.heroCard {
+			@extend .x-padding;
+			@extend .y-padding;
+			background-color: var(--background-color-secondary);
 			grid-area: heroCard;
-			text-wrap: wrap;
+
+			// h2 {
+			// 	font-size: rem;
+			// }
+
+			@include media(tabletAndUp) {
+				// The CSS for screens bigger than tablets
+				// height: 100%;
+				// width: 70%;
+				text-wrap: wrap;
+
+				h2 {
+					font-size: 6.125rem;
+				}
+			}
 		}
 	}
 
@@ -425,6 +463,10 @@
 		@extend .y-padding;
 		background-color: var(--background-color-secondary);
 		height: auto;
+
+		img {
+			max-width: 90vw;
+		}
 
 		@include media(tabletAndUp) {
 			// The CSS for screens bigger than tablets
@@ -488,7 +530,7 @@
 					p {
 						display: block;
 						color: var(--fic-gray);
-						font-size: 6cqmin;
+						font-size: 6.8cqmin;
 					}
 				}
 			}
@@ -601,6 +643,11 @@
 			min-width: 13vw;
 			border: 1px solid var(--fic-gray);
 			background-color: var(--background-color-primary);
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 2rem;
+			font-size: 1rem;
 		}
 
 		.sectionFormSubFrame {
