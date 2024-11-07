@@ -101,7 +101,7 @@
 				<h2>Housing cooperatives are social hubs for a broader community</h2>
 				<p>
 					They offer culture and spaces for meeting, solidarity services and temporary stays for
-					travellers. They are also neighborhood hubs, where locals get to know each other, building
+					travelers. They are also neighborhood hubs, where locals get to know each other, building
 					connections to the society outside of the political niche.
 				</p>
 			</div>
@@ -190,7 +190,15 @@
 		contribute to ecological land stewardship and food security and how active their members are
 		within social and ecological movements.
 	</p>
-	<div class="sectionFormSubFrame"></div>
+	<div class="sectionFormSubFrame">
+		<div class="light-background-card">
+			<h4 class="label">THE POWER OF THE CROWD</h4>
+			<p>
+				If we get 200 000 people across Europe to donate €5 per month, in less than 4.5 years we’d
+				reach the goal of donating 50k€ to 1000 new collectives
+			</p>
+		</div>
+	</div>
 	<div class="donationForm">
 		<h4>MAKE A DONATION</h4>
 		<label for="name">First and Last Name</label>
@@ -727,6 +735,14 @@
 				grid-area: sectionFormSubFrame;
 				width: 100%;
 				height: 400px;
+				display: flex;
+				align-items: center;
+
+				.light-background-card {
+					background-color: var(--background-color-primary);
+					height: 60%;
+					width: 40%;
+				}
 			}
 		}
 
