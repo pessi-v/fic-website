@@ -6,8 +6,8 @@
 		<div class="flex-column-row-gap">
 			<h4 class="label">BEFRIEND A CAUSE</h4>
 			<p>
-				Your contribution makes a real difference. Every small donation to the Friend’s Fund,
-				supports the creation of a a better, more secure future for all.
+				With a large community of supporters donating a small amount of money monthly we can build
+				something significant
 			</p>
 			<a class="btn btn-primary buttonMain" href="#sectionForm">DONATE</a>
 		</div>
@@ -15,10 +15,7 @@
 	<div class="cardButtonSecondary">
 		<div class="flex-column-row-gap">
 			<h4 class="label">LOOKING FOR FUNDS?</h4>
-			<p>
-				We support initiatives that are willing to commit to Ownership Common, a legal agreement
-				between the legal entity of a project, and an external party
-			</p>
+			<p>Donations will be given to groups that are committed to a commons-ownership model</p>
 			<a class="btn btn-secondary buttonSecondary" href="#section2">APPLY</a>
 		</div>
 	</div>
@@ -95,8 +92,8 @@
 			<div class="cardThree mosaicCard">
 				<h2>Less housing stress leaves more time for political work</h2>
 				<p>
-					If your housing needs are covered, you'll have more capacities for important political
-					work. Donating money towards building the housing commons is therefore a way to support
+					If your housing needs are covered, you'll have more capacities for political work.
+					Donating money towards building the housing commons is therefore a way to support
 					activists involved in important causes.
 				</p>
 			</div>
