@@ -43,9 +43,9 @@
 		<h4 class="label">WHAT WE DO</h4>
 		<h2>We collect money and pass that money on to<br />provide beginning capital</h2>
 		<p>
-			By crowdfunding, we raise money to buy property and keep it out of the market. Join our
-			mission and donate a small amount each month to the Friends' shared fund, creating a better,
-			more secure future for all.
+			We raise money by crowdfunding to buy properties and keep them out of the market, supporting a
+			network of community-owned housing projects. Join our mission and donate a small amount each
+			month to the Friends' shared fund, creating a better, more secure future for all.
 		</p>
 		<div class="section1SubFrame">
 			<img src="./image1.png" alt="" />
@@ -74,10 +74,12 @@
 		<h4 class="label" style="width: 80vw; margin-left: auto;margin-right: auto;">CORE IDEAS</h4>
 		<div class="cardMosaic">
 			<div class="cardOne mosaicCard">
-				<h2>A legal contract to keep property off the market.</h2>
+				<h2>A legal contract to keep property off the market</h2>
 				<p>
 					Each group receiving money from Friends in Common will have to make a legal contract, with
-					FIC or another organisation, that will ensure that the property will not be sold.
+					FIC or another organisation, that will make sure that the property will not become a
+					commodity again. This is our way of building up the Commons - something that serves the
+					community, is maintained by the community, and will not be exploited for profit.
 				</p>
 			</div>
 			<div class="cardTwo mosaicCard">
@@ -91,79 +93,84 @@
 				</p>
 			</div>
 			<div class="cardThree mosaicCard">
-				<h2>Less housing stress leaves more time for struggle.</h2>
+				<h2>Less housing stress leaves more time for political work</h2>
 				<p>
-					If your housing needs are covered, or are easier to cover, you'll have more capacities for
-					political work. Donating money to Friends in Common is therefore a way to support
-					political work in general.
+					If your housing needs are covered, you'll have more capacities for important political
+					work. Donating money towards building the housing commons is therefore a way to support
+					activists involved in important causes.
 				</p>
 			</div>
 			<div class="cardFour mosaicCard">
-				<h2>Housing cooperatives are social hubs for a broader community.</h2>
+				<h2>Housing cooperatives are social hubs for a broader community</h2>
 				<p>
-					They offer culture, space for meeting, solidarity services and temporary lodging for
-					travellers. They are neighborhood hubs.
+					They offer culture and spaces for meeting, solidarity services and temporary stays for
+					travellers. They are also neighborhood hubs, where locals get to know each other, building
+					connections to the society outside of the political niche.
 				</p>
 			</div>
 			<div class="cardFive mosaicCard">
-				<h2>With climate change, societal change is inevitable.</h2>
+				<h2>With climate change, societal change is inevitable</h2>
 				<p>
-					“Only a crisis - actual or perceived - produces real change. When that crisis occurs, the
-					actions that are taken depend on the ideas that are lying around. That, I believe, is our
-					basic function: to develop alternatives to existing policies, to keep them alive and
-					available until the politically impossible becomes the politically inevitable.” - Milton
-					Friedman
+					There will eventually be massive shocks to the existing society through climate change,
+					and adapting to the new conditions will be necessary for the individual as well as the
+					collective. When we cannot reliably depend on the current structures of food and energy
+					production, cooperation in every scale will become more important. It makes therefore
+					sense to actively design new ways of providing our existential needs through cooperating.
+					Additionally, the changes coming ahead will also require emotional and cultural
+					adjustment, of which cooperative housing and collective care are sane answers.
 				</p>
 			</div>
 			<div class="cardSix mosaicCard">
 				<h2>
-					Permanence of residence is vital for a healthy connection with the Earth and vibrant
+					Permanence of residence is necessary for a healthy connection with the Earth and vibrant
 					cities
 				</h2>
 				<p>
-					Gentrification kills culture by disabling the creative love that the inhabitants bring to
-					their neighborhoods. In a parallel effect, only by living for a longer time close to
-					forests, fields, meadows and bodies of water can we observe their health and progression
-					through the seasons.
+					When urban residents don't have stability of residence, they will engage less with their
+					surroundings in positive and constructive ways. Gentrification is the process of
+					un-rooting residents through increasing rents, causing the degradation of a lively city
+					culture.
+					<br />
+					In a parallel effect, only by living for a longer time close to forests, fields, meadows and
+					bodies of water can we observe their health and progression through the seasons.
 				</p>
 			</div>
 			<div class="cardSeven mosaicCard">
-				<h2>Living with community is good for you.</h2>
+				<h2>Living with community is good for you</h2>
 				<p>
-					There is so little hope for a better future amongst left networks, but hope can be
-					powerful. Being a part of a positive movement gives determination and builds collective
-					cohesion. Reading about successes gives hope that there is sanity in the world. The
-					movement is about building a better system, about showing it is possible. Protagonism
-					embraces life.
+					Living in close contact with people you share values with is one of the best things
+					against the depressive, atomized, post-industrial world, where traditional, location-based
+					social bonds have been devastated. Sharing meals, sharing care, sharing joys and
+					frustrations with the people around you is the stuff of life.
 				</p>
 			</div>
 			<div class="cardEight mosaicCard">
-				<h2>The Internet can be used to build social economic networks.</h2>
+				<h2>The Internet can be used to build social, economic networks</h2>
 				<p>
-					The Internet not only connects us all, but makes transfer of money possible. It makes it
-					possible to build economic strategy on a collective level, yet without the need for a
-					state or commerce as the agent. New Internationalism
+					The Internet can be used for so much more than social media. It makes the transfer of
+					money and information possible without geographic limitations. It makes the distribution
+					of resources within a network possible. Using the Internet we can build economic strategy
+					on a collective, international level, without the need for state planning and against the
+					logic of an extraction-oriented market.
 				</p>
 			</div>
 			<div class="cardNine mosaicCard">
-				<h2>A hopeful narrative.</h2>
+				<h2>A hopeful narrative</h2>
 				<p>
-					There is so little hope for a better future amongst left networks, but hope can be
-					powerful. Being a part of a positive movement gives determination and builds collective
-					cohesion. Reading about successes gives hope that there is sanity in the world. The
-					movement is about building a better system, about showing it is possible. Protagonism
-					embraces life.
+					We're working towards a vision of the future that is more social, more ecological and more
+					whole. We think this vision will inspire hope, and through participation in the
+					crowdfunding campaing the members will feel empowered. Reading about successful projects
+					will hopefully inspire more people to join and grow the network.
 				</p>
 			</div>
 			<div class="cardTen mosaicCard">
-				<h2>Building a culture of the future.</h2>
+				<h2>Building a culture of the future</h2>
 				<p>
-					The quest that Friends in Common is on, could be described as "human liberation". We
-					think, that helping start up hundreds of collectives with social-ecological values can
-					have reverberations over time and over generations. Obviously, it's not really possible to
-					have a say on the nature of future human societies, but it is possible in the present day
-					to support communities, whose values are then more likely to be passed on to future
-					generations
+					The long-term quest of Friends in Common is human liberation. We think that starting up
+					hundreds of collectives with social-ecological values can have reverberations over time
+					and over generations. Although it's not possible for us to have a say on the nature of
+					future societies, it is possible in the present day to support communities, whose values
+					we want to be passed on to future generations.
 				</p>
 			</div>
 		</div>
@@ -269,7 +276,7 @@
 		padding: 0;
 	}
 
-	html {
+	:global(html) {
 		overflow-y: scroll;
 		height: 100%;
 	}
@@ -378,6 +385,7 @@
 
 		@include media(tabletAndUp) {
 			height: auto;
+			max-height: 100vh;
 			display: grid;
 			grid-template-columns: 1fr 75%;
 			grid-template-rows: 95px 1fr 1fr;
@@ -714,8 +722,8 @@
 			grid-template-rows: auto;
 			grid-template-areas:
 				'label .'
-				'title .'
-				'content donationForm'
+				'title title'
+				'content content'
 				'sectionFormSubFrame donationForm';
 
 			.sectionFormSubFrame {
@@ -776,6 +784,7 @@
 				grid-template-areas:
 					'one five ten'
 					'custom submit submit';
+				color: var(--fic-gray);
 
 				.one {
 					grid-area: one;
