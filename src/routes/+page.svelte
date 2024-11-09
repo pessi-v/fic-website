@@ -893,5 +893,9 @@
 		background-color: var(--fic-gray);
 		width: 100vw;
 		height: auto;
+
+		p {
+			font-size: 1rem;
+		}
 	}
 </style>
