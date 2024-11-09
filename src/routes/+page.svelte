@@ -28,9 +28,9 @@
 		<div class="flex-column-row-gap">
 			<h2>Promoting<br />Community<br />Ownership of<br />HOUSING</h2>
 			<p>
-				By crowdfunding, we raise money to buy property and keep it out of the market. Join our
-				mission to create housing groups where people live collectively, with secure, rent-free
-				homes under resident control.
+				We raise money by crowdfunding to buy property and keep it out of the market, helping build
+				a network of community-owned housing projects. Join our mission to create housing groups
+				where people live collectively, with secure, rent-free homes under resident control.
 			</p>
 		</div>
 	</div>
@@ -225,6 +225,15 @@
 		form the introduction to a book.
 	</p>
 </div>
+<div class="footer">
+	<h4 class="font-color-invert">FRIENDS IN COMMON</h4>
+	<p class="font-color-invert">
+		We raise money by crowdfunding to buy property and keep it out of the market, supporting a
+		network of community-owned housing projects
+	</p>
+	<h4 class="font-color-invert">CONTACT</h4>
+	<p class="font-color-invert">friendsincommon@posteo.net</p>
+</div>
 
 <style lang="scss">
 	:global(body) {
@@ -299,6 +308,11 @@
 		font-family: 'Inter';
 		color: #3b3b3b;
 		font-size: 2rem;
+	}
+
+	p.font-color-invert,
+	h4.font-color-invert {
+		color: var(--background-color-primary);
 	}
 
 	h2 {
@@ -871,5 +885,13 @@
 			height: 100vh;
 			width: 100vw;
 		}
+	}
+
+	.footer {
+		@extend .x-padding;
+		@extend .y-padding;
+		background-color: var(--fic-gray);
+		width: 100vw;
+		height: auto;
 	}
 </style>
