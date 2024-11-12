@@ -4,7 +4,6 @@ import { sveltePreprocess } from 'svelte-preprocess';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: sveltePreprocess({
-		scss: true,
 		prependData: `@import 'src/app.scss';`
 	}),
 	kit: {
