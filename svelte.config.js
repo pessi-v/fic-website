@@ -4,7 +4,8 @@ import { sveltePreprocess } from 'svelte-preprocess';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: sveltePreprocess({
-		scss: true
+		scss: true,
+		prependData: `@import 'src/app.scss';`
 	}),
 	kit: {
 		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
