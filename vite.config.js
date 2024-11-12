@@ -1,13 +1,8 @@
-import { defineConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
-import { sveltePreprocess } from 'svelte-preprocess';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [
-		sveltekit({
-			preprocess: sveltePreprocess()
-		})
-	],
+	plugins: [sveltekit()],
 	css: {
 		preprocessorOptions: {
 			scss: {
