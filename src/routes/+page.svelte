@@ -1,3 +1,7 @@
+<script>
+	import '../app.scss';
+</script>
+
 <div class="heroSection">
 	<div class="logo">
 		<h4 class="label">FRIENDS IN COMMON</h4>
@@ -234,6 +238,3 @@
 	<h4 class="font-color-invert">CONTACT</h4>
 	<p class="font-color-invert">friendsincommon@posteo.net</p>
 </div>
-
-<style lang="scss">
-</style>
